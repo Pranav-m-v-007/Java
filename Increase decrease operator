@@ -1,0 +1,13 @@
+public class IncDecExample {
+    public static void main(String[] args) {
+        int num = 12;
+        System.out.println("Original number: " + num);
+
+        int num1 = num;
+        num1++;
+        System.out.println("After increment (num++): " + num1);
+
+        num--;
+        System.out.println("After (num--): " + num);
+    }
+}

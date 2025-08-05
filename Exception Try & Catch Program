@@ -1,0 +1,17 @@
+import java.io.*;
+public class ExceptionDemo {
+    public static void main(String[] args) {
+        try {
+            int a = 10;
+            int b = 0;
+            int result = a / b; // This will cause ArithmeticException
+            System.out.println("Result: " + result);
+            int[] numbers = {1, 2, 3};
+            System.out.println("Number at index 5: " + numbers[5]); // This will cause ArrayIndexOutOfBoundsException
+        } catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception caught: " + e.getMessage());
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array Index Out of Bounds Exception caught: " + e.getMessage());
+        }
+    }
+}
